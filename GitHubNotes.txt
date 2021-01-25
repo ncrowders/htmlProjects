@@ -1,0 +1,44 @@
+git init
+
+make .gitignore file >>>>> touch .gitignore
+
+To make commit:
+
+1. stage your changes: git add --all
+2. Commit the changes: git commit -m "initial commit"
+
+History of recent commits: git log
+
+Whats going on with git: git status
+
+Configure git:
+   1. git config --global user.name " Name Here"
+   2. git config --global user.email " Email Here"
+
+
+Adding repository/remote:
+
+git remote add origin "url address"
+
+Show Remotes:
+
+git remote -v
+
+Push commit to github:
+
+git push -u origin master
+
+How to get github to trust the changes being made/ storing credentials:
+https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+cd ~ hom direct
+cd .ssh <-- goes into file
+ls -a looks at everything in it
+
+
+harp notes:
+cd smallSite
+harp server public
+harp compile public wwww
+surge --domain smallSiteproj.surge.sh www
+this is my surge url: smallSiteproj.surge.sh

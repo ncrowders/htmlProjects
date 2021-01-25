@@ -6,28 +6,70 @@
 to use already in vsc -->
     <head> <!-- </head> Used for adding code to link to 
         things like style sheet -->
-      <script>
-          function myFunction() {
-              document.getElementById("demo").innerHTML = "It may say hello but it's goodbye.";
-          }
-      </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Document</title> <!-- This is the title tag that appears in
+        <title>KodX|Web Development</title> <!-- This is the title tag that appears in
              the internet tab -->
+        <link rel="icon" href="C:\Users\crowd\OneDrive\Desktop\Projects\hello_html\photos\Logo.jpg" />
         </head>
-    <body>
-    <!-- This is where the content goes, for example: pictures, videos
-         or text -->
-        <h1> Hello, world!</h1>  <!-- there are h1-h6 these are header tags-->
-        <img src="https://api.time.com/wp-content/uploads/2019/12/ducks-walk-on-glass-roof-video.jpg?w=800&quality=85" 
-        alt="ducks">
-        <p id="demo"> .... And welcome.
-        </p>
-        <button type="button" onclick="myFunction()"> Click Here! </button>
+    <body onload="document.getElementById('defaultOpen').click();">
+        <script src="indHome.js"></script>
+        <img src="C:\Users\crowd\OneDrive\Desktop\Projects\hello_html\photos\Logo.jpg" 
+          alt="logo" class="logo">
 
+        
+        <button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+        <button class="tablink" onclick="openPage('Tutorials', this, 'black')">Tutorials</button>
+        <button class="tablink" onclick="openPage('Services', this, 'black')">Services</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'black')">Contact Us</button>
+    
+<div id="Home" class="tabcontent">
+   <h3>Home</h3>
+   <p>This is the Home page.</p>
+</div>
+<div id="About" class="tabcontent">
+   <h3>About</h3>
+   <p>This is information about the company.</p>
+</div>
+<div id="Tutorials" class="tabcontent">
+    <h3>Tutorials</h3>
+    <p>This is information about the company.</p>
+ </div>
+ <div id="Services" class="tabcontent">
+    <h3>Services</h3>
+    <p>This is information about the company.</p>
+ </div>
+<div id="Contact" class="tabcontent">
+   <h3>ContactUs</h3>
+   <p>Contact us for any feedback, query and complaints.</p>
+   <div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email">
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Type here......" style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+</div>
+
+<footer>
+    <p>Author: Hege Refsnes<br>
+    <a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer>
         </body>
 </html>
-<!-- C:\Users\crowd\Projects\hello_html\index.html path url/ right click 
+<!-- C:\Users\crowd\OneDrive\Desktop\Projects\hello_html\index.html path url/ right click 
 index.html and click copy path -->
